@@ -19,3 +19,16 @@ Specifically, we first decouple the bottom modules of clients (directly responsi
 We further introduce *decoupled parallel backpropagation* to accelerate delayed gradient computation by eliminating idle waiting through parallel processing across modules.
 Additionally, we are the first to establish convergence analysis for VFAL, rigorously characterizing how our decoupling mechanism interacts with existing VFL dynamics, and prove that **DecVFAL** achieves an $\mathcal{O}(1/\sqrt{K})$ convergence rate matching that of standard VFLs.
 Experimental results show that **DecVFAL** ensures competitive robustness while significantly achieving about $3\sim10\times$ speed up.
+
+## BibTeX
+
+```bibtex
+@inproceedings{Accelerated2025TianxingMan,
+    author = {Tianxing, Man and Yu, Bai and Ganyu, Wang and Jinjie, Fang and Haoran, Fang and Bin, Gu and Yi, Chang},
+    title = {Accelerated Vertical Federated Adversarial Learning through Decoupling Layer-Wise Dependencies},
+    year = {2025},
+    publisher = {Curran Associates Inc.},
+    booktitle = {Proceedings of the 39th International Conference on Neural Information Processing Systems},
+    series = {NIPS '25}
+}
+```
