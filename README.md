@@ -2,11 +2,11 @@
 
 Accelerated Vertical Federated Adversarial Learning through Decoupling Layer-Wise Dependencies
 
-[[Paper](https://neurips.cc/virtual/2025/loc/san-diego/poster/115884)]
-[[Code](https://github.com/workelaina/DecVFAL)]
 [[Homepage](https://workelaina.github.io/DecVFAL)]
+[[PDF](https://workelaina.github.io/DecVFAL/static/blob/DecVFAL.pdf)]
+[[Code](https://github.com/workelaina/DecVFAL)]
 
-NeurIPS 2025 (Poster)
+NeurIPS 2025 ([Poster](https://neurips.cc/virtual/2025/loc/san-diego/poster/115884))
 
 ## Abstract
 
