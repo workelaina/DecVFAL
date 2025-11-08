@@ -1,0 +1,164 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #b3b3b3;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.image {
+  position: relative;
+  width: 420px;
+  height: 210px;
+  -webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+}
+
+
+.error {
+  width: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+.error h1 {
+  font-size: 125px;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.error h2 {
+  margin: -30px 0 0 0;
+  padding: 0px;
+  font-size: 47px;
+  letter-spacing: 0px;
+}
+
+.error p {
+  font-size: 20px;
+}
+
+
+@-webkit-keyframes tiltcard {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+  }
+}
+
+@keyframes tiltcard {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+  }
+}
+
+@-webkit-keyframes explode {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    -webkit-transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+    transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+  }
+}
+
+@keyframes explode {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    -webkit-transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+    transform: translate(var(--spreaddist), var(--vertdist)) scale(var(--scaledist));
+  }
+}
+
+@-webkit-keyframes writeLine {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: var(--linelength);
+  }
+}
+
+@keyframes writeLine {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: var(--linelength);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    -webkit-transform: scale(.85);
+    transform: scale(.85);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    -webkit-transform: scale(.75);
+    transform: scale(.75);
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .container {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container {
+    -webkit-transform: scale(.6);
+    transform: scale(.6);
+  }
+}
