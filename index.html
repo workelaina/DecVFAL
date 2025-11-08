@@ -111,32 +111,32 @@
                         <h2 class="title is-3 publication-title">Accelerated Vertical Federated Adversarial Learning through Decoupling Layer-Wise Dependencies</h2>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a>Tianxing Man</a><sup style="color: rgb(0, 33, 71);">1</sup>,</span>
+                                <a>Tianxing Man</a><sup style="color: rgb(51, 102, 153);">1</sup>,</span>
                             <span class="author-block">
-                                <a href="https://workelaina.github.io/">Yu Bai</a><sup style="color: rgb(0, 33, 71);">1</sup>,</span>
+                                <a href="https://workelaina.github.io/">Yu Bai</a><sup style="color: rgb(51, 102, 153);">1</sup>,</span>
                             <span class="author-block">
-                                <a>Ganyu Wang</a><sup style="color: rgb(79, 38, 131);">2</sup>,
+                                <a>Ganyu Wang</a><sup style="color: rgb(143, 85, 224);">2</sup>,
                             </span>
                             <span class="author-block">
-                                <a>Jinjie Fang</a><sup style="color: rgb(0, 33, 71);">1</sup>,
+                                <a>Jinjie Fang</a><sup style="color: rgb(51, 102, 153);">1</sup>,
                             </span>
                             <span class="author-block">
-                                <a>Haoran Fang</a><sup style="color: rgb(0, 33, 71);">1</sup>,
+                                <a>Haoran Fang</a><sup style="color: rgb(51, 102, 153);">1</sup>,
                             </span>
                             <span class="author-block">
-                                <a>Bin Gu</a><sup style="color: rgb(0, 33, 71);">1</sup>,
+                                <a>Bin Gu</a><sup style="color: rgb(51, 102, 153);">1</sup>,
                             </span>
                             <span class="author-block">
-                                <a>Yi Chang</a><sup style="color: rgb(0, 33, 71);">1</sup><sup>,</sup><sup style="color: rgb(0, 61, 138);">3</sup><sup>,</sup><sup style="color: rgb(237, 44, 37);">4</sup>,
+                                <a>Yi Chang</a><sup style="color: rgb(51, 102, 153);">1</sup><sup>,</sup><sup style="color: rgb(0, 127, 0);">3</sup><sup>,</sup><sup style="color: rgb(237, 44, 37);">4</sup>,
                             </span>
                         </div>
                         <br>
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block"><sup style="color: rgb(0, 33, 71);">1</sup>School of Artificial Intelligence, Jilin University, China,</span>
+                            <span class="author-block"><sup style="color: rgb(51, 102, 153);">1</sup>School of Artificial Intelligence, Jilin University, China,</span>
                             <br>
-                            <span class="author-block"><sup style="color: rgb(79, 38, 131);">2</sup>Western University, Canada</span>
+                            <span class="author-block"><sup style="color: rgb(143, 85, 224);">2</sup>Western University, Canada</span>
                             <br>
-                            <span class="author-block"><sup style="color: rgb(0, 61, 138);">3</sup>International Center of Future Science, Jilin University, China</span>
+                            <span class="author-block"><sup style="color: rgb(0, 127, 0);">3</sup>International Center of Future Science, Jilin University, China</span>
                             <br>
                             <span class="author-block"><sup style="color: rgb(237, 44, 37);">4</sup>Engineering Research Center of Knowledge-Driven Human-Machine Intelligence, MOE, China</span>
                         </div>
@@ -205,27 +205,25 @@
                             To this end, we propose <b>DecVFAL</b> framework, which substantially accelerates <b>VFAL</b> training through a dual-level <b>Dec</b>oupling mechanism applied during adversarial sample generation.
                             Specifically, we first decouple the bottom modules of clients (directly responsible for adversarial updates) from the remaining networks, enabling efficient <i>lazy sequential propagations</i> that reduce communication frequency through delayed gradients.
                             We further introduce <i>decoupled parallel backpropagation</i> to accelerate delayed gradient computation by eliminating idle waiting through parallel processing across modules.
-                            Additionally, we are the first to establish convergence analysis for VFAL, rigorously characterizing how our decoupling mechanism interacts with existing VFL dynamics, and prove that <b>DecVFAL</b> achieves an <i>𝒪(1/√K)</i> convergence rate matching that of standard VFLs.
-                            Experimental results show that <b>DecVFAL</b> ensures competitive robustness while significantly achieving about $3\sim10\times$ speed up.
+                            Additionally, we are the first to establish convergence analysis for VFAL, rigorously characterizing how our decoupling mechanism interacts with existing VFL dynamics, and prove that <b>DecVFAL</b> achieves an <b>𝒪(1/√K)</b> convergence rate matching that of standard VFLs.
+                            Experimental results show that <b>DecVFAL</b> ensures competitive robustness while significantly achieving about <b>3~10×</b> speed up.
                         </p>
                     </div>
-                </div>
+                </div>8
             </div>
     </section>
 
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>
-            @inproceedings{Accelerated2025TianxingMan,
-                author = {Tianxing, Man and Yu, Bai and Ganyu, Wang and Jinjie, Fang and Haoran, Fang and Bin, Gu and Yi, Chang},
-                title = {Accelerated Vertical Federated Adversarial Learning through Decoupling Layer-Wise Dependencies},
-                year = {2025},
-                publisher = {Curran Associates Inc.},
-                booktitle = {Proceedings of the 39th International Conference on Neural Information Processing Systems},
-                series = {NIPS '25}
-            }
-            </code></pre>
+            <pre><code>@inproceedings{Accelerated2025TianxingMan,
+    author = {Tianxing, Man and Yu, Bai and Ganyu, Wang and Jinjie, Fang and Haoran, Fang and Bin, Gu and Yi, Chang},
+    title = {Accelerated Vertical Federated Adversarial Learning through Decoupling Layer-Wise Dependencies},
+    year = {2025},
+    publisher = {Curran Associates Inc.},
+    booktitle = {Proceedings of the 39th International Conference on Neural Information Processing Systems},
+    series = {NIPS '25}
+}</code></pre>
         </div>
     </section>
 
