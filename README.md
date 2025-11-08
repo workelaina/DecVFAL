@@ -20,7 +20,7 @@ We further introduce *decoupled parallel backpropagation* to accelerate delayed 
 Additionally, we are the first to establish convergence analysis for VFAL, rigorously characterizing how our decoupling mechanism interacts with existing VFL dynamics, and prove that **DecVFAL** achieves an $\mathcal{O}(1/\sqrt{K})$ convergence rate matching that of standard VFLs.
 Experimental results show that **DecVFAL** ensures competitive robustness while significantly achieving about $3\sim10\times$ speed up.
 
-## env and run
+## Usage
 
 ### init
 
@@ -38,11 +38,12 @@ source ~/miniconda3/bin/activate
 conda init --all
 
 conda update -n base -c defaults conda
+# a a
 ```
 
 ```shell
 git clone https://github.com/workelaina/DecVFAL.git
-# scp -r exp ubuntu@ip:~/
+# scp -r exp user@ip:~/
 ```
 
 ```shell
@@ -68,7 +69,7 @@ alias py="python3"
 
 conda deactivate
 conda activate decvfal
-cd ~/exp
+# cd ~/exp
 ```
 
 ### env
