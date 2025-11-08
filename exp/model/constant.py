@@ -1,0 +1,5 @@
+VFL_N_CLIENT = 'v_nc'
+VFL_PADDING = 'v_p'
+VFL_MODEL_NAME = 'v_mn'
+VFL_MODEL_ARGS = 'v_ma'
+VFL_MODEL = 'model'

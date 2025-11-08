@@ -1,0 +1,50 @@
+.vscode/
+.idea/
+
+# python
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+# executable
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+
+# archive
+*.tar
+*.gz
+*.tgz
+*.rar
+*.zip
+*.7z
+*ubyte
+
+archive/
+*/temp/
+tempCodeRunnerFile.*
+*.diff
+
+data/
+*.csv
+log
+*.log
+*.tex
+result/
+draw/
+# ref/
+paper/
+latex/
+cite/
+
+authorized_keys
+.archive*
+
+rebuttal/
