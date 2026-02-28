@@ -114,7 +114,7 @@ python train.py
 # Ctrl A D
 ```
 
-## Citation
+## BibTeX
 
 ```bibtex
 @inproceedings{Accelerated2025TianxingMan,
