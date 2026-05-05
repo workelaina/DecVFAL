@@ -57,14 +57,7 @@
                     <a class="navbar-link">
                         More Research
                     </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="https://workelaina.github.io/DecVFAL/">
-                            DecVFAL
-                        </a>
-                        <a class="navbar-item" href="https://workelaina.github.io/LMAO/">
-                            LMAO
-                        </a>
-                    </div>
+                    <div class="navbar-dropdown" id="more-research-dropdown"></div>
                 </div>
             </div>
 
@@ -72,7 +65,44 @@
     </nav>
 
     <script>
+    const RESEARCH_LIST_URL = "https://workelaina.github.io/files/research-list.json";
+        const FALLBACK_RESEARCH_LIST = [
+            { title: "DecVFAL", href: "https://workelaina.github.io/DecVFAL/" },
+            { title: "LMAO", href: "https://workelaina.github.io/LMAO/" },
+        ];
+
+        function renderMoreResearch(items) {
+            const dropdown = document.getElementById("more-research-dropdown");
+            if (!dropdown) return;
+
+            dropdown.innerHTML = "";
+            items.forEach(item => {
+                if (!item || !item.title || !item.href) return;
+                const link = document.createElement("a");
+                link.className = "navbar-item";
+                link.href = item.href;
+                link.textContent = item.title;
+                dropdown.appendChild(link);
+            });
+        }
+
+        async function loadMoreResearch() {
+            try {
+                const response = await fetch(RESEARCH_LIST_URL, { cache: "no-cache" });
+                if (!response.ok) throw new Error("Failed to load research list");
+
+                const list = await response.json();
+                if (!Array.isArray(list)) throw new Error("Invalid research list format");
+
+                renderMoreResearch(list);
+            } catch (error) {
+                renderMoreResearch(FALLBACK_RESEARCH_LIST);
+            }
+        }
+
         document.addEventListener("DOMContentLoaded", function () {
+            loadMoreResearch();
+
             updateRowNumbers("#retrieval-results");
             updateRowNumbers("#captioning-results");
 
